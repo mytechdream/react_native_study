@@ -10,6 +10,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 import FavoriteScreen from "./screens/FavoriteScreen"
 import FavoritesContextProvider from "./store/context/favorites-context"
 import { Provider } from "react-redux"
+import { store } from "./store/redux/store"
 
 const Stack = createNativeStackNavigator()
 const Drawer = createDrawerNavigator()
@@ -72,6 +73,7 @@ export default function App() {
           >
             <Stack.Screen
               name="MealsCategories"
+              //   嵌套导航栏
               component={DrawerNavigator}
               options={{
                 title: "All Categories",

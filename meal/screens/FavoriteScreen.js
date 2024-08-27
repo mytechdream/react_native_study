@@ -1,8 +1,9 @@
-import { useContext, useSelector } from "react"
+import { useContext } from "react"
 import { StyleSheet, Text, View } from "react-native"
 import MealList from "../components/MealsList/MealList"
 import { FavoritesContext } from "../store/context/favorites-context"
 import { MEALS } from "../data/dummy-data"
+import { useSelector } from "react-redux"
 
 function FavoriteScreen() {
   //   const favoriteMealsCtx = useContext(FavoritesContext)

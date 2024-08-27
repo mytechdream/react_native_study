@@ -10,7 +10,7 @@ const favoriteSlice = createSlice({
       //通过action.payload来获取数据
       state.ids.push(action.payload.id)
     },
-    removeFavorite: (state) => {
+    removeFavorite: (state, action) => {
       state.ids.splice(state.ids.indexOf(action.payload.id), 1)
     },
   },

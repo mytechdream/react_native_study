@@ -26,7 +26,7 @@ function CategoriesScreen({ navigation }) {
       keyExtractor={(item) => item.id}
       //如果一个函数特别大可以写在外面
       renderItem={renderCategoryItem}
-      horizontal={false} //设置两列渲染方法
+      horizontal={false} //设置两列渲染技巧
       numColumns={2}
     />
   )
