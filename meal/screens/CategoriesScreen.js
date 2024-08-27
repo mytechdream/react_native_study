@@ -24,8 +24,9 @@ function CategoriesScreen({ navigation }) {
     <FlatList
       data={CATEGORIES}
       keyExtractor={(item) => item.id}
+      //如果一个函数特别大可以写在外面
       renderItem={renderCategoryItem}
-      horizontal={false}
+      horizontal={false} //设置两列渲染方法
       numColumns={2}
     />
   )
